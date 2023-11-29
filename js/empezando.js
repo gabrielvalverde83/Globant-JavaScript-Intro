@@ -71,10 +71,6 @@ for (let x=2; x<=100; x++){
 /* ------------------------------------------------------------------------------------ */
 
 //fc celsiusFarenheit()
-//tomma un array de de c y lo convierte a f
-//usar el metodo .map
-//imprimir
-
 /*
 
 let celsius = [0, 100, 33, 50, -78];
@@ -95,51 +91,9 @@ console.log(celsiusFarenheit(celsius));
 
 /* ------------------------------------------------------------------------------------ */
 
-/*
-const url = "https://swapi.dev/";
-
-//console.log("Hola1");
-
-let promesa = new Promise((resolve, reject) =>{
-        setTimeout(() =>{
-            resolve( response => {}
-
-            );
-        }, 2000);
-});
-
-promesa.then(res =>{
-    console.log("Hola3" + res);
-});
-
-*/
-
-/* ------------------------------------------------------------------------------------ */
 
 
-const url = "https://swapi.dev/api/people"
 
-function fetchData(url){
-    const promesa = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      fetch(url)
-        .then(response => response.json())
-        .then(data => { resolve(data); 
-        })
-        .catch(error => reject(error)); // Manejar errores y rechazar la promesa si ocurre un problema
-    }, 2000);
-  });
-return promesa;
-}
-  
-fetchData(url)
-  .then(data => {
-    console.log("Datos recibidos:", data);
-  })
-  .catch(error => {
-    // Manejar errores
-    console.error("Error al obtener los datos:", error);
-  });
 
 
 
